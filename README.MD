@@ -20,8 +20,8 @@ This repository contains a reusable script to install Docker on Debian-based sys
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/<repo>.git
-cd <repo>
+git clone https://github.com/amajid09/docker-install-debian.git
+cd docker-install-debian
 ```
 
 ### 2. Make Script Executable
