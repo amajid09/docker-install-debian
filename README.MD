@@ -41,7 +41,7 @@ sudo ./scripts/install-docker.sh
 ## ⚡ Alternative: Run Without Cloning
 
 ```bash
-curl -O https://raw.githubusercontent.com/<your-username>/<repo>/main/scripts/install-docker.sh
+curl -O https://raw.githubusercontent.com/amajid09/docker-install-debian/main/scripts/install-docker.sh
 less install-docker.sh   # inspect before running
 sudo bash install-docker.sh
 ```
