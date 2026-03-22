@@ -4,7 +4,7 @@ This repository contains a reusable script to install Docker on Debian-based sys
 
 ---
 
-## 📦 What This Script Does
+## What This Script Does
 
 * Installs required dependencies (`curl`, `ca-certificates`, etc.)
 * Adds Docker’s official GPG key
@@ -15,7 +15,7 @@ This repository contains a reusable script to install Docker on Debian-based sys
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -38,7 +38,7 @@ sudo ./scripts/install-docker.sh
 
 ---
 
-## ⚡ Alternative: Run Without Cloning
+## Alternative: Run Without Cloning
 
 ```bash
 curl -O https://raw.githubusercontent.com/amajid09/docker-install-debian/main/scripts/install-docker.sh
@@ -66,7 +66,7 @@ If successful, Docker is installed correctly 🎉
 
 ---
 
-## 🔧 Optional: Run Docker Without `sudo`
+## Optional: Run Docker Without `sudo`
 
 Add your user to the Docker group:
 
@@ -77,9 +77,9 @@ newgrp docker
 
 ---
 
-## 🧪 Debugging & Troubleshooting
+##  Debugging & Troubleshooting
 
-### ❌ Script fails early
+###  Script fails early
 
 Because the script uses `set -e`, it stops immediately on errors.
 
@@ -93,7 +93,7 @@ This prints each command before execution.
 
 ---
 
-### ❌ `permission denied`
+### `permission denied`
 
 Make sure:
 
@@ -109,7 +109,7 @@ sudo ./scripts/install-docker.sh
 
 ---
 
-### ❌ Docker service not starting
+### Docker service not starting
 
 Check logs:
 
@@ -125,7 +125,7 @@ sudo systemctl restart docker
 
 ---
 
-### ❌ `docker: command not found`
+### `docker: command not found`
 
 Reload shell:
 
@@ -137,7 +137,7 @@ Or log out and back in.
 
 ---
 
-### ❌ Network / repo issues
+### Network / repo issues
 
 Check if the Docker repo exists:
 
@@ -153,7 +153,7 @@ sudo apt update
 
 ---
 
-### ❌ GPG key issues
+### GPG key issues
 
 Re-fetch key:
 
@@ -164,7 +164,7 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 ---
 
-## 📚 Source & Attribution
+## Source & Attribution
 
 This installation script is based on the official Docker documentation for Debian.
 
@@ -172,11 +172,11 @@ The commands have been consolidated and packaged into a single reusable script f
 
 For the most up-to-date instructions, detailed explanations, and alternative installation methods, please refer to the official Docker documentation:
 
-👉 https://docs.docker.com/engine/install/debian/
+ https://docs.docker.com/engine/install/debian/
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 * This script is a convenience wrapper around the official steps.
 * Always review scripts before running them, especially when executing with elevated privileges (`sudo`).
