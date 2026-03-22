@@ -162,3 +162,24 @@ sudo rm -f /etc/apt/keyrings/docker.asc
 sudo curl -fsSL https://download.docker.com/linux/debian/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
+---
+
+## 📚 Source & Attribution
+
+This installation script is based on the official Docker documentation for Debian.
+
+The commands have been consolidated and packaged into a single reusable script for convenience and consistency across environments.
+
+For the most up-to-date instructions, detailed explanations, and alternative installation methods, please refer to the official Docker documentation:
+
+👉 https://docs.docker.com/engine/install/debian/
+
+---
+
+## ⚠️ Disclaimer
+
+* This script is a convenience wrapper around the official steps.
+* Always review scripts before running them, especially when executing with elevated privileges (`sudo`).
+* The official Docker documentation should be considered the source of truth in case of discrepancies.
+
+---
